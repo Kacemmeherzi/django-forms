@@ -1,0 +1,36 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+*.db
+
+# Django specific
+*.log
+*.pot
+*.py[cod]
+*.egg-info/
+*.egg
+media/
+staticfiles/
+static/
+.env
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Virtual environment
+venv/
+env/
+.env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
