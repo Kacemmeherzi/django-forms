@@ -58,15 +58,15 @@
 
 <div class="form-container">
     <h1>Add Contact Message</h1>
-    <form method="POST" action="{% url 'add_contact_message' %}"> <!-- Change to your actual view URL -->
+    <form method="" action=""> <!-- Change to your actual view URL -->
         {% csrf_token %} <!-- Add CSRF token for security -->
         <div class="form-group">
             <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name" required>
+            <input type="text" id="first_name" name="firstname" required>
         </div>
         <div class="form-group">
             <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name" required>
+            <input type="text" id="last_name" name="lastname" required>
         </div>
         <div class="form-group">
             <label for="email">Email:</label>
@@ -77,10 +77,9 @@
             <textarea id="message" name="message" rows="4" required></textarea>
         </div>
         <div class="form-group">
-            <button type="submit">Send Message</button>
+            <button type="submit"  >Send Message</button>
         </div>
     </form>
-    <a href="{% url 'home' %}" class="back-link">Back to Home</a> <!-- Change to your actual home URL -->
 </div>
 
 </body>
