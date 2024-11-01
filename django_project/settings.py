@@ -140,3 +140,10 @@ LOGGING={
 }
 }
 }
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+DEFAULT_FROM_EMAIL = 'kacem@gmail.com'  # Replace with your email address
+EMAIL_HOST = 'smtp-relay.brevo.com'  # Use Brevo's SMTP server
+EMAIL_HOST_USER = '7d6d63001@smtp-brevo.com'  # Your SMTP username
+EMAIL_HOST_PASSWORD = 'jrzGUBy3t7DkM80g'  # Your SMTP password
+EMAIL_PORT = 587  # Standard port for TLS
+EMAIL_USE_TLS = True  # Use TLS for security
