@@ -1,0 +1,15 @@
+<!-- email.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}  <!-- Render the form -->
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
