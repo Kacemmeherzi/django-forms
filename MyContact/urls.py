@@ -1,8 +1,10 @@
-from django.contrib import admin
-from django.urls import include, path
+from django.urls import  path
+
+from MyContact import views
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('mycontact/',include('MyConatact.urls')),
+   path('add',views.controleform1, name='add'),
+
 
 ]
